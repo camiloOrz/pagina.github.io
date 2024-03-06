@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+html, body{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+    
+}
+body::-webkit-scrollbar{
+    width: 5px;     /* Tamaño del scroll en vertical */
+    height: 3px;
+    background-color: rgb(0, 11, 61);
+    margin-left: 20px;
+    
+    
+      /* Ocultar scroll */
+}
+body::-webkit-scrollbar-button{
+    height: 70px;
+}
+
+body::-webkit-scrollbar-thumb{
+    
+    background-color: rgb(0, 21, 114);
+    border-radius: 20px;
+    height: 2px;
+    
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+    }
+    
+
+
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0, 14, 77, 0.534)),
+        url(imagenes/header-imagen.jpg);
+
+        background-position: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        
+}
+
+    .menu   {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo img{
+        
+        width: 230px;
+        height: auto;
+        filter: drop-shadow(1px 1px 10px rgb(5, 5, 5));
+        
+    }
+   
+
+    .menu .navbar ul li{
+        
+        position: relative;
+        float: left;
+    }
+    
+    .menu .navbar ul li a {
+        padding: 2px 20px;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0);
+         
+        border-radius: 50px;
+        color: #fffdfc;
+        transition: 1s;
+    }
+    
+    .menu .navbar ul li a:hover{
+         background-color: rgba(0, 0, 0, 0.158);
+         
+         border-radius: 50px;
+        transition: 1.3s;
+        color: #e7d748;
+       
+    }
+    #menu{
+        display: none;
+    }
+    .menu-icon{
+        width: 25px;
+        filter: invert(1);
+    }
+    .menu label{
+        cursor: pointer;
+        display: none;
+    }
+    .header-content{
+        text-align: center;
+    }
+    .header-content h1{
+        
+        font-size: 68px;
+        color: #fffdfc;
+        text-shadow: 1px 1px 10px black ;
+    }
+    .header-content p{
+        line-height: 23px;
+        font-size: 18px;
+        margin-top: 20px;
+        color: #fffdfc;
+        padding: 0 300px;
+        justify-content: center;
+    }
+    .btn-1:not(hover){
+        transition: 600ms;
+        display: inline-block;
+        padding: 11px 35px;
+        background-color: #f5bd06;
+        margin-top: 20px;
+        border-radius: 35px;
+        color: #fffdfc;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 10px black;
+        box-shadow: 1px 1px 10px black;
+    }
+    .btn-1:hover{
+        transition: 240ms;
+        background-color: #a7820a;
+    }
+    .ubicacion p :not(hover){
+        transition: 1s;
+        box-shadow: 2px 2px 20px rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+    .ubicacion p :hover{
+        -webkit-transform:scale(1.1);transform:scale(1.1);
+        transition: 1s;
+        box-shadow: 2px 2px 20px rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+    .ubicacion img{
+        border-radius: 20px;
+        width: auto;
+        height: 300px;
+        box-shadow: 2px 2px 20px black;
+    }
+ 
+    
+    .ubicacion h2{
+        color: #eeb90a;
+        text-shadow: 1px 1px 20px black;
+        padding: 22px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .ubicacion{
+        
+        box-shadow: 2px 2px 20px black;
+        background-color: rgb(0, 11, 61);
+       
+    }
+    .ubicacion-caja{
+        padding-bottom: 20px;
+        justify-content: center; 
+        display: flex;
+    }
+    .principal{
+        background-color: rgb(0, 11, 61);
+        padding: 20px;
+    }
+    .tipos-de-derecho-content{
+        text-align: center;
+    }
+    .tipos-de-derecho-content h2{
+        text-transform: uppercase;
+        font-size: 40px;
+        text-shadow: 2px 2px 20px black;
+        color: #f5bd06;
+        padding: 8px 0;
+    }
+    .tipos-de-derecho-content p{
+        font-size: 20px;
+        padding: 0 250px;
+        color: #fffdfc;
+    }
+    .tipos-derechos h3{
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 20px;
+        color: #f5bd06;
+        text-shadow: 2px 2px 20px black;
+    }
+    .derechos-group img:not(hover){
+        transition: 700ms;
+        border-radius: 15px;
+        width: auto;
+        height: 200px;
+    }
+    .derechos-group img:hover{
+        transition: 700ms;
+        border-radius: 15px;
+        box-shadow: 2px 2px 50px black;
+        width: auto;
+        height: 210px;
+        
+    }
+    
+    
+   .tipos-derechos {
+        color: #fffdfc;
+        text-align: center;
+        font-size: 17px;
+        max-width: 300px;
+        line-height: 23px;
+    }
+    .derechos-group{
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    .servicios{
+        
+        text-align: center;
+        padding: 0 10px;
+        padding-bottom: 40px;
+        background-color: rgb(0, 11, 61);;
+    }
+  .servicios h2{
+    text-shadow: 2px 2px 20px black;
+    color: #f5bd06;
+    margin-bottom: 10px;
+    font-size: 40px;
+    padding-bottom: 5px;
+  }
+    .servicios .tipos-derechos:not(hover){
+        border-radius: 20px;
+        transition: 1s;
+        padding: 10px;
+        border: rgb(255, 238, 0) 2px solid;
+    }
+   
+    .servicios .tipos-derechos h3{
+        font-size: 21px;
+        padding: 10px 0;
+    }
+
+
+    .footer{
+        text-align: center;
+        background-color: rgb(0, 8, 44);
+        height: 20vh;
+    }
+    .servicios .tipos-derechos:hover {
+        transition: 1s;
+        text-transform:scale(1.0);transform:scale(1.050);
+    }
+    @media(max-width:991){
+        .menu{
+            padding: 30px;
+        }
+        .menu label{
+            display: initial;
+        }
+        .menu .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: aqua;
+            display: none;
+        }
+        .menu .navbar ul li{
+            width: 100%;
+        }
+        #menu:checked ~ .navbar{
+            display: initial;
+        } 
+     }

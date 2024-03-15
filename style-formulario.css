@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{   
+    background: rgb(11, 42, 180);
+    background: linear-gradient(180deg, rgb(10, 29, 114) 0%, rgb(4, 4, 59) 100%);
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{   
+    margin: 10px;
+    background: rgb(6,32,150);
+    background: linear-gradient(180deg, rgb(10, 29, 114) 0%, rgb(4, 4, 59) 100%);
+    padding: 0px 55px;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    text-align: center;
+    width: 320px;
+    
+}
+.input-group{
+   display: flex; 
+   flex-direction: column;
+   text-align: left;
+}
+h2{     
+    
+    font-size: 28px;
+    color: #ffc404;
+    text-shadow: 1px 1px 20px black;
+}
+label{
+    font-size: 15x;
+    text-shadow: 1px 1px 20px black;
+    color: white;
+}
+input, textarea{
+   
+    background-color: rgba(23, 38, 99, 0.692);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: rgb(22, 33, 83);
+    padding: 17px 20px;
+    outline: none;
+    color: white;
+    text-shadow: 1px 1px 20px black;
+
+}
+input::placeholder, textarea::placeholder{
+    
+    color: white ;
+    opacity: 20%;
+}   
+.boton{ 
+    
+    text-align: center;
+}
+
+.btn{   
+    
+    cursor: pointer;
+    font-size: 15px;
+    border: 5px solid rgb(211, 172, 0);
+    background-color: #ffc404;
+
+}
+.logo{  
+    margin: 5px;
+    text-align: center;
+}
+img{
+    filter: drop-shadow(1px 2px 5px rgb(0, 0, 0));
+    width: 210px;
+    height: auto;
+    
+}

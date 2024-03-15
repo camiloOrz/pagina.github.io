@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb{
 
 
 .container {
-max-width: 1200px;
+
 margin: 0 auto;
 }
 .header {
@@ -68,6 +68,7 @@ margin: 0 auto;
 }
 
     .menu   {
+        margin: 0 20px;
         position: absolute;
         top: 0;
         left: 0;
@@ -77,8 +78,8 @@ margin: 0 auto;
         justify-content: space-between;
     }
     .logo img{
-        
-        width: 230px;
+        padding: 10px 0;
+        width: 200px;
         height: auto;
         filter: drop-shadow(1px 1px 10px rgb(5, 5, 5));
         
@@ -94,22 +95,27 @@ margin: 0 auto;
     .menu .navbar ul li a {
         padding: 2px 20px;
         font-size: 18px;
-    
+        border-radius: 50px;
+        
         color: #fffdfc;
-        transition: 1s;
+        
     }
     
     .menu .navbar ul li a:hover{
-         background-color: rgba(0, 0, 0, 0.267);
+         border: 2px #f5bd06 solid;
          
          border-radius: 50px;
-        transition: 1.3s;
-        color: #e7d748;
+        
+        
        
     }
     #menu{
         display: none;
     }
+   #barra{
+    display: fix;
+    
+   }
     .menu-icon{
         width: 25px;
         filter: invert(1);
@@ -149,7 +155,7 @@ margin: 0 auto;
     }
     .btn-1:hover{
         transition: 240ms;
-        background-color: #a7820a;
+        background-color: #f7ce19;
     }
     .ubicacion p :not(hover){
         width: 400px;
@@ -180,10 +186,11 @@ margin: 0 auto;
         font-size: 40px;
     }
     .ubicacion{
-        
-        box-shadow: 2px 2px 20px black;
-        background-color: rgb(0, 11, 61);
-       
+
+
+        background: rgba(3, 16, 77, 1.0);
+        background: radial-gradient(at center, rgba(3, 16, 77, 1.0), rgba(3, 3, 56, 1.0));                        
+               
     }
     .ubicacion-caja{
         padding-bottom: 20px;
@@ -191,7 +198,9 @@ margin: 0 auto;
         display: flex;
     }
     .principal{
-        background-color: rgb(0, 11, 61);
+        background: rgba(3, 16, 77, 1.0);
+        background: radial-gradient(at center, rgba(3, 16, 77, 1.0), rgba(3, 3, 56, 1.0));                        
+        
         padding: 20px;
         
     }
@@ -202,6 +211,7 @@ margin: 0 auto;
     .tipos-de-derecho-content h2{
         text-transform: uppercase;
         font-size: 40px;
+        
         text-shadow: 2px 2px 20px black;
         color: #f5bd06;
         padding: 8px 0;
@@ -212,40 +222,38 @@ margin: 0 auto;
         color: #fffdfc;
     }
     .tipos-derechos h3{
+        line-height: 30px;
         text-transform: uppercase;
         font-size: 30px;
         padding: 20px;
         color: #f5bd06;
+        max-width: 300px;
         text-shadow: 2px 2px 20px black;
     }
-    .derechos-group img:not(hover){
-        transition: 700ms;
-        border-radius: 15px;
-        width: auto;
-        height: 200px;
-    }
-    .derechos-group img:hover{
-        transition: 700ms;
-        border-radius: 15px;
-        box-shadow: 2px 2px 50px black;
-        width: auto;
-        height: 210px;
-        
+       .tipos-derechos ul { 
+        display: inline-block;
+        text-align: left;
+       padding: 20px;
+       box-shadow: 0 0 20px black;
+        background-image: none;
+        max-width: 360px;
+        border-radius: 13px;
+        border: 2px #f5bd06 solid;
     }
     
-    
-   .tipos-derechos {
-    
+   .tipos-derechos {    
+        align-items: center;
+        margin: 0 10px;
         color: #fffdfc;
         text-align: center;
-        font-size: 17px;
-        max-width: 300px;
-        line-height: 23px;
+        font-size: 22px;
+        
+        line-height: 33px;
     }
     .derechos-group{
 
         
-        justify-content: space-between;
+        justify-content: space-evenly;
         display: flex;
         flex-wrap: wrap;
         
@@ -256,7 +264,9 @@ margin: 0 auto;
         text-align: center;
         padding: 0 10px;
         padding-bottom: 40px;
-        background-color: rgb(0, 11, 61);;
+
+        background: rgba(3, 16, 77, 1.0);
+        background: radial-gradient(at center, rgba(3, 16, 77, 1.0), rgba(3, 3, 56, 1.0));                        
     }
   .servicios h2{
     text-shadow: 2px 2px 20px black;
@@ -265,40 +275,28 @@ margin: 0 auto;
     font-size: 40px;
     padding-bottom: 5px;
   }
-    .servicios .tipos-derechos:not(hover){
-        
-        border-radius: 20px;
-        transition: 1s;
-        padding: 10px;
-        border: rgb(255, 238, 0) 2px solid;
-    }
-   
-    .servicios .tipos-derechos h3{
-        font-size: 21px;
-        padding: 10px 0;
+    
+    
+    
+    .footer img{
+        filter: invert(200%) brightness(406%) ;
     }
     .footer div{
-        color: #f5bd06;
+        color: #ffffff;
         align-items: center;
         text-align: center;
     }
 
-    .footer ul a{
-  
+   
     
-    
-    
-    
-    
-    
-}
+
     .footer h3{
         text-align: center;
         font-size: 30px;
     }
     .footer{
         
-        background-color: rgb(0, 8, 44);
+        background-color: #000322;
         height: 20vh;
     }
     .servicios .tipos-derechos:hover {
@@ -358,14 +356,14 @@ margin: 0 auto;
         }
         .header-content h1{
             line-height: 40px;
-            font-size: 50px;
+            font-size: 40px;
 
         }
         .header-content{
-            padding: 100px 50px;
+            padding: 100px;
         }
         .header-content p{
-            padding: 0px ;
+            padding: 0 1px ;
             
         }
         .logo img{

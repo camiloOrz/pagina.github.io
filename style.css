@@ -17,7 +17,7 @@ body{
     font-family: "Red Hat Display", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
+    
     
     
 }
@@ -124,6 +124,19 @@ margin: 0 auto;
         cursor: pointer;
         display: none;
     }
+    .textoAnimado{
+        font-size: 20px;
+
+        color: #ffffffd3;
+        text-shadow: 1px 1px 10px black ;
+        text-transform: uppercase;
+        margin-top: 15px;
+        padding-left: 210px;
+        padding-right: 210px;
+
+
+
+    }
     .header-content{
         text-align: center;
     }
@@ -229,19 +242,26 @@ margin: 0 auto;
         color: #f5bd06;
         max-width: 300px;
         text-shadow: 2px 2px 20px black;
+
     }
+       
        .tipos-derechos ul { 
+        
         display: inline-block;
         text-align: left;
        padding: 20px;
        box-shadow: 0 0 20px black;
         background-image: none;
         max-width: 360px;
+        
         border-radius: 13px;
         border: 2px #f5bd06 solid;
     }
     
-   .tipos-derechos {    
+
+    
+   .tipos-derechos {   
+        
         align-items: center;
         margin: 0 10px;
         color: #fffdfc;
